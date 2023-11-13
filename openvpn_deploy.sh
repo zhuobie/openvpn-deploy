@@ -279,10 +279,10 @@ client_revoke() {
 
 help() {
     echo "Usage: $0 [OPTION]"
-    echo "  install                          Show this help message"
-    echo "  uninstall                        Generate client config"
-    echo "  authorize client1 <ip addr>      Revoke client"
-    echo "  revoke client1                   Revoke client"
+    echo "  install                          Install OpenVPN Server."
+    echo "  uninstall                        Uninstall OpenVPN Server"
+    echo "  authorize client1 <ip addr>      add client with static ip address"
+    echo "  revoke client1                   Revoke client authorization"
 }
 
 if [[ "$command" == "help" ]]; then
